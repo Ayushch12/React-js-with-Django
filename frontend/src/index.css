@@ -1,25 +1,89 @@
+/* Global Styles */
 body {
+  font-family: 'Nunito', sans-serif;
+  background-color: #f4f7f6;
+  color: #505a5b;
   margin: 0;
-  padding:0;
-  font-family: sans-serif;
-  -webkit-font-smoothing: antialiased;
-  background-color: rgb(5, 5, 128);
+  padding: 0;
 }
 
-.todo-title{
-  cursor:pointer;
+/* Responsive Container */
+.content {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
 }
-.completed-todo {
-  text-decoration: line-through;
+
+/* Task Manager Heading */
+h1 {
+  color: #333;
+  margin-bottom: 20px;
 }
-.tab-list > span {
-  padding: 5px 8px;
-  border : 1px solid rgb(5, 5, 128);
-  border-radius:10px;
-  margin-right:5px;
+
+/* Button Styles */
+button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.3s;
 }
-.tab-list>span.active {
-  background-color: rgb(5, 5, 128);
-  color:#fff;
+
+/* Card Styles */
+.card {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+/* List Group Styles */
+.list-group-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1.25rem;
+}
+
+/* Responsive Flexbox for Buttons */
+.list-group-item span:last-child {
+  display: flex;
+  gap: 0.5rem;
+}
+
+/* Tab List Styles */
+.tab-list span {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s;
+}
+
+/* Desktop Specific Styles */
+@media (min-width: 768px) {
+  /* Increase padding for larger screens */
+  .list-group-item {
+    padding: 1rem 1.5rem;
+  }
+
+  /* Scale up the add button and tab list for desktop */
+  .tab-list span,
+  button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  /* Adjust card width */
+  .card {
+    max-width: 80%;
+    margin: 2rem auto;
+  }
+}
+
+/* Mobile Specific Styles */
+@media (max-width: 767px) {
+  /* Styles for mobile, if needed */
 }
