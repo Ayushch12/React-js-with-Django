@@ -1,6 +1,6 @@
 React-Django-Task_Manager
 
-Here is a Github link : 
+Here is a Github link : https://github.com/Ayushch12/Django-full-backend
 
 A Task Manager application created in React as the client-side and Django Rest Framework as the server-side
 
